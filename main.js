@@ -30,45 +30,54 @@ arrayPersone = [
     {
         nome: "Wayne Barnett",
         ruolo: "Founder & Ceo",
-        foto: "wayne-barnett-founder-ceo.jpg",
+        foto: "./img/wayne-barnett-founder-ceo.jpg",
     },
     {
         nome: "Angela Caroll",
         ruolo: "Chief Editor",
-        foto: "angela-caroll-chief-editor.jpg",
+        foto: "./img/angela-caroll-chief-editor.jpg",
     },
     {
         nome: "Walter Gordon",
         ruolo: "Office Manager",
-        foto: "walter-gordon-office-manager.jpg",
+        foto: "./img/walter-gordon-office-manager.jpg",
     },
     {
         nome: "Angela Lopez",
         ruolo: "Social Media Manager",
-        foto: "angela-lopez-social-media-manager.jpg",
+        foto: "./img/angela-lopez-social-media-manager.jpg",
     },
     {
         nome: "Scott Estrada",
         ruolo: "Developer",
-        foto: "scott-estrada-developer.jpg",
+        foto: "./img/scott-estrada-developer.jpg",
     },
     {
         nome: "Barbara Ramos",
         ruolo: "Graphic Designer",
-        foto: "barbara-ramos-graphic-designer.jpg",
+        foto: "./img/barbara-ramos-graphic-designer.jpg",
     },
 ]
 
-// MILESTONE 1
-console.log(arrayPersone);
+// BONUS 
+let carta = document.getElementById("carta")
 
 
-// MILESTONE 2
 for(i = 0; i < arrayPersone.length; i++){
-    // let elemento = arrayPersone[i]
-    // console.log(elemento);
+    let elemento = arrayPersone[i]
+    console.log(elemento.foto);
 
-    const objString = JSON.stringify(arrayPersone[i])
-    document.writeln(objString);
+    carta.innerHTML += 
+    `<div class="card text-start col-4 bg g-4">
+        <div class="radius-border border">
+            <img class="card-img-top w-100" src='${elemento.foto}' alt="Title" />
+        </div>
+        
+        <div class="card-body">
+            <h4 class="card-title text text-center">${elemento.nome}</h4>
+            <p class="card-text text text-center">${elemento.ruolo}</p>
+        </div>
+    </div>`
+    
     
 }

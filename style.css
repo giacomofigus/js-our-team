@@ -3,3 +3,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body,
+.container,
+.card{
+    background-color: #171723;
+}
+
+.bg{
+    background: rgba(255, 255, 255, 0.05);
+}
+
+img{
+    width: 100%;
+}
+
+.text{
+    color: white
+}
+
+.radius-border{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+}
