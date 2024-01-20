@@ -25,3 +25,50 @@ Scott Estrada	Developer	scott-estrada-developer.jpg
 Barbara Ramos	Graphic Designer	barbara-ramos-graphic-designer.jpg
 */
 
+// MILESTONE 0  
+arrayPersone = [
+    {
+        nome: "Wayne Barnett",
+        ruolo: "Founder & Ceo",
+        foto: "wayne-barnett-founder-ceo.jpg",
+    },
+    {
+        nome: "Angela Caroll",
+        ruolo: "Chief Editor",
+        foto: "angela-caroll-chief-editor.jpg",
+    },
+    {
+        nome: "Walter Gordon",
+        ruolo: "Office Manager",
+        foto: "walter-gordon-office-manager.jpg",
+    },
+    {
+        nome: "Angela Lopez",
+        ruolo: "Social Media Manager",
+        foto: "angela-lopez-social-media-manager.jpg",
+    },
+    {
+        nome: "Scott Estrada",
+        ruolo: "Developer",
+        foto: "scott-estrada-developer.jpg",
+    },
+    {
+        nome: "Barbara Ramos",
+        ruolo: "Graphic Designer",
+        foto: "barbara-ramos-graphic-designer.jpg",
+    },
+]
+
+// MILESTONE 1
+console.log(arrayPersone);
+
+
+// MILESTONE 2
+for(i = 0; i < arrayPersone.length; i++){
+    // let elemento = arrayPersone[i]
+    // console.log(elemento);
+
+    const objString = JSON.stringify(arrayPersone[i])
+    document.writeln(objString);
+    
+}
